@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        navigationController?.navigationBar.barTintColor = UIColor(red: 21/255, green: 96/255, blue: 254/255, alpha: 1)
+        navigationController?.navigationBar.titleTextAttributes  = [NSForegroundColorAttributeName: UIColor.white]
+        UIApplication.shared.statusBarStyle = .lightContent
     }
 
     override func didReceiveMemoryWarning() {
