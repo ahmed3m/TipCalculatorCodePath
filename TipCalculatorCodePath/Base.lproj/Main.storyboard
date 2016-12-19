@@ -109,6 +109,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="QkS-Uh-uWS" firstAttribute="top" secondItem="kpt-zc-Zg8" secondAttribute="bottom" constant="30" id="2Ju-yc-mdw"/>
                             <constraint firstItem="VIw-O9-324" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="3Fs-jG-h4O"/>
@@ -121,6 +122,9 @@
                             <constraint firstItem="VIw-O9-324" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vEa-DF-1gI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VIw-O9-324" secondAttribute="bottom" id="w7W-RB-YAK"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="EKc-WY-N4z" appends="YES" id="GZH-hg-r7o"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="wEl-uB-fnM"/>
                     <connections>
@@ -131,6 +135,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EKc-WY-N4z">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="Tam-6o-XTZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
